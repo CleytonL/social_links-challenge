@@ -1,0 +1,113 @@
+/* Geral */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Inter;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    background-color: hsl(0, 0%, 8%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container Social links */
+.container{
+    background-color: hsl(0, 0%, 12%);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem;
+    width: 400px;
+    border-radius: 15px;
+}
+
+/* Profile */
+
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.profile-pic{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 2rem;
+}
+
+.name{
+    color: hsl(0, 0%, 100%);
+    font-weight: 700;
+}
+
+.city{
+    color: hsl(75, 94%, 57%);
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+
+.subtitle{
+    font-size: 14px;
+    color: hsl(0, 0%, 90%);
+}
+
+/* Links de navegação */
+
+nav ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav ul li{
+    position: relative;
+    margin-bottom: 10px;
+    padding: 15px 0;
+    font-size: 16px;
+    width: 300px;
+    text-align: center;
+    background-color: hsl(0, 0%, 20%);
+    color: hsl(0, 0%, 100%);
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+nav ul li i{
+    position: absolute;
+    padding: 2px 10px;
+    left: 0;
+    top: auto;
+    font-size: 16px;
+}
+
+
+li:hover{
+    background-color: hsl(75, 94%, 57%);
+    color: hsl(0, 0%, 20%);
+}
+
+/* Responsividade */
+
+@media (max-width:375px){
+    .container{
+        width: 350px;
+    }
+}
+
+@media (max-width:320px){
+    .container{
+        width: 300px;
+    }
+
+    .subtitle{
+        font-size: 12px;
+    }
+}
